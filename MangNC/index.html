@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Học Mảng</title>
+
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <!-- Bai1 -->
+        <div class="container">
+            <h2 class="mt-4">Array Plus</h2>
+            <div class="form-group">
+                <label for="name">Fullname_Customer</label>
+                <input type="text" class="form-control" id="name" value>
+            </div>
+            <div class="form-group">
+                <label for="id">Id_Pro</label>
+                <input type="text" class="form-control" id="id" value>
+            </div>
+            <div class="form-group">
+                <label for="namePro">Name_Pro</label>
+                <input type="text" class="form-control" id="namePro" value>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity_Pro</label>
+                <input type="text" class="form-control" id="quantity" value>
+            </div>
+            <div class="form-group">
+                <label for="price">Price_Pro</label>
+                <input type="text" class="form-control" id="price" value>
+            </div>
+            <div class="form-group">
+
+                <input type="button" class="btn btn-primary" value="Save"
+                    onclick="save()">
+                <input type="button" class="btn btn-secondary" value="Show"
+                    onclick="show()">
+                <input type="button" class="btn btn-danger" value="Reset"
+                    onclick="reset()">
+            </div>
+        </div>
+        <div class="container mt-4">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Auto increment</th>
+                        <th>Customer name</th>
+                        <th>Id</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl" style="text-align: center;"></tbody>
+            </table>
+        </div>
+
+        <!-- Bai2 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 login-container">
+                    <h2 class="text-center login-header">User Login</h2>
+                    <div class="form-group">
+                        <label for="User_Name">User Name</label>
+                        <input type="text" class="form-control login-input"
+                            id="User_Name"
+                            placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control login-input"
+                            id="Password"
+                            placeholder="Enter your password">
+                    </div>
+                    <button type="button"
+                        onclick="Login()"
+                        class="btn btn-primary btn-block login-btn">Login</button>
+                    <button type="button" onclick="Clear()"
+                        class="btn btn-secondary btn-block login-btn">Clear</button>
+                    <p id="error"></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script src="./index.js"></script>
+    </body>
+
+</html>
